@@ -7,11 +7,13 @@ module.exports = function(config) {
     preprocessors: {
       "**/*.js": ["coverage"]
     },
-
+    frameworks: ['jasmine'],
+    
     // optionally, configure the reporter
     coverageReporter: {
       type: "html",
       dir: "coverage/"
-    }
+    },
+    singleRun: true,
   });
 };
