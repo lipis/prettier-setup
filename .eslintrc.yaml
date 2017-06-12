@@ -1,13 +1,14 @@
-env:
-  es6: s
-
 plugins:
   - prettier
 
 extends:
   - prettier
 
+parserOptions:
+  ecmaVersion: 2017
+
 rules:
+  comma-dangle: [2, always-multiline]
   prettier/prettier: [2, {
       singleQuote: true,
       trailingComma: all,
