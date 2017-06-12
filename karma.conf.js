@@ -1,18 +1,14 @@
 module.exports = function(config) {
   config.set({
-    files: ["**/*.js"],
-
-    reporters: ["progress", "coverage"],
-
+    files: ['foo.js'],
+    autoWatch: false,
+    reporters: ['progress', 'coverage'],
     preprocessors: {
-      "**/*.js": ["coverage"]
+      'foo.js': ['coverage'],
     },
-    frameworks: ['jasmine'],
-    
-    // optionally, configure the reporter
     coverageReporter: {
-      type: "html",
-      dir: "coverage/"
+      type: 'html',
+      dir: 'coverage/',
     },
     singleRun: true,
   });

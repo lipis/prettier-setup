@@ -11,7 +11,8 @@
   },
   "scripts": {
     "lint-fix": "npm run lint -- --fix",
-    "lint": "eslint -c .eslintrc.yaml --ignore-path .gitignore *.js"
+    "lint": "eslint -c .eslintrc.yaml --ignore-path .gitignore *.js",
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
