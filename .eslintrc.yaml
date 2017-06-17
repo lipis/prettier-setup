@@ -8,10 +8,12 @@ parserOptions:
   ecmaVersion: 2017
 
 rules:
-  comma-dangle: [2, always-multiline]
+  no-else-return: 2
+  no-unused-vars: [2, {args: none}]
   prettier/prettier: [2, {
+      bracketSpacing: false,
+      printWidth: 80,
       singleQuote: true,
-      trailingComma: es5,
-      bracketSpacing: false
+      trailingComma: es5
     }
   ]

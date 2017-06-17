@@ -1,14 +1,24 @@
-module.exports = function(config) {
+module.exports = function(
+  config
+) {
   config.set({
-    files: ['foo.js'],
+    files: [
+      'foo.js',
+    ],
     autoWatch: false,
-    reporters: ['progress', 'coverage'],
+    reporters: [
+      'progress',
+      'coverage',
+    ],
     preprocessors: {
-      'foo.js': ['coverage'],
+      'foo.js': [
+        'coverage',
+      ],
     },
     coverageReporter: {
       type: 'html',
-      dir: 'coverage/',
+      dir:
+        'coverage/',
     },
     singleRun: true,
   });
