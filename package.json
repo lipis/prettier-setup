@@ -5,14 +5,11 @@
     "eslint": "3.19.0",
     "eslint-config-prettier": "2.1.1",
     "eslint-plugin-prettier": "2.1.1",
-    "karma": "1.7.0",
-    "karma-coverage": "1.1.1",
     "prettier": "1.4.2"
   },
   "scripts": {
     "lint-fix": "npm run lint -- --fix",
-    "lint": "eslint -c .eslintrc.yaml --ignore-path .gitignore *.js",
-    "test": "karma start karma.conf.js"
+    "lint": "eslint -c .eslintrc.yaml --ignore-path .gitignore *.js"
   },
   "repository": {
     "type": "git",
