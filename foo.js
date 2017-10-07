@@ -5,5 +5,5 @@ module.exports = foo => {
     foo.task.run(['task:open_bar', 'task:close_bar'])
   );
   const test = ['foo', 'bar', 'hello', 'world'];
-  test.lala;
+  console.log(test);
 };

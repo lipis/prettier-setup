@@ -1,15 +1,26 @@
+env:
+  browser: true
+  es6: true
+  node: true
+
 plugins:
   - prettier
 
 extends:
   - prettier
 
-parserOptions:
-  ecmaVersion: 2017
-
 rules:
+  no-const-assign: 2
+  no-dupe-class-members: 2
   no-else-return: 2
+  no-lonely-if: 2
+  no-magic-numbers: [2, {ignore: [-1, 0, 1]}]
+  no-shadow: 2
+  no-unused-expressions: 2
   no-unused-vars: [2, {args: none}]
+  no-var: 2
+  prefer-const: 2
+  prefer-promise-reject-errors: 2
   prettier/prettier: [2, {
       bracketSpacing: false,
       printWidth: 80,
@@ -17,3 +28,6 @@ rules:
       trailingComma: es5
     }
   ]
+  sort-keys: [2, asc, {caseSensitive: true, natural: true}]
+  sort-vars: 2
+  strict: [2, global]
