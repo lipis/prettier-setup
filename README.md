@@ -14,8 +14,11 @@ npm install
 npm run lint
 ```
 
-## Lint Fix
+## Tasks
 
 ```
 npm run lint:fix
+npm run lint:script
+npm run lint:style
+npm run lint:json
 ```
