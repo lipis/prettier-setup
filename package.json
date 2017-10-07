@@ -2,14 +2,25 @@
   "name": "prettier-tests",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "3.19.0",
-    "eslint-config-prettier": "2.1.1",
-    "eslint-plugin-prettier": "2.1.1",
-    "prettier": "1.4.2"
+    "eslint-config-prettier": "2.6.0",
+    "eslint-plugin-prettier": "2.3.1",
+    "eslint": "4.8.0",
+    "husky": "0.14.3",
+    "lint-staged": "4.2.3",
+    "prettier": "1.7.4"
+  },
+  "lint-staged": {
+    "*.js": ["yarn lint:fix:script", "git add"],
+    "*.json": ["yarn lint:fix:json", "git add"],
+    "*.scss": ["yarn lint:fix:style", "git add"]
   },
   "scripts": {
-    "lint-fix": "npm run lint -- --fix",
-    "lint": "eslint -c .eslintrc.yaml --ignore-path .gitignore *.js"
+    "lint": "eslint -c .eslintrc.yaml --ignore-path .gitignore **/*.js",
+    "lint:fix": "yarn lint:fix:script && yarn lint:fix:style && yarn lint:fix:json",
+    "lint:fix:script": "npm run lint -- --fix",
+    "lint:fix:style": "prettier --single-quote --print-width=80 --write '**/*.scss'",
+    "lint:fix:json": "prettier --single-quote --print-width=120 --write '**/*.json'",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
