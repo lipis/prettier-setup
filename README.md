@@ -3,17 +3,17 @@
 ## Install
 
 ```bash
-yarn
+npm install
 ```
 
 ## Test Lint
 
 ```
-yarn lint
+npm run lint
 ```
 
 ## Lint Fix
 
 ```
-yarn lint-fix
+npm run lint:fix
 ```
