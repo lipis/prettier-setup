@@ -10,16 +10,15 @@
     "prettier": "1.7.4"
   },
   "lint-staged": {
-    "*.js": ["npm run lint:fix:script", "git add"],
-    "*.json": ["npm run lint:fix:json", "git add"],
-    "*.scss": ["npm run lint:fix:style", "git add"]
+    "*.js": ["npm run lint:script", "git add"],
+    "*.json": ["npm run lint:json", "git add"],
+    "*.scss": ["npm run lint:style", "git add"]
   },
   "scripts": {
-    "lint": "eslint -c .eslintrc.yaml --ignore-path .gitignore **/*.js",
-    "lint:fix": "npm run lint:fix:script && npm run lint:fix:style && npm run lint:fix:json",
-    "lint:fix:script": "npm run lint -- --fix",
-    "lint:fix:style": "prettier --single-quote --print-width=80 --write '**/*.scss'",
-    "lint:fix:json": "prettier --single-quote --print-width=120 --write '**/*.json'",
+    "lint": "npm run lint:script && npm run lint:style && npm run lint:json",
+    "lint:script": "eslint --fix -c .eslintrc.yaml --ignore-path .gitignore **/*.js ",
+    "lint:style": "prettier --single-quote --print-width=80 --write '**/*.scss'",
+    "lint:json": "prettier --single-quote --print-width=120 --write '**/*.json'",
     "precommit": "lint-staged"
   },
   "repository": {
