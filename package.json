@@ -4,22 +4,24 @@
   "devDependencies": {
     "eslint-config-prettier": "2.6.0",
     "eslint-plugin-prettier": "2.3.1",
-    "eslint": "4.8.0",
+    "eslint": "4.9.0",
     "husky": "0.14.3",
-    "lint-staged": "4.2.3",
+    "lint-staged": "4.3.0",
     "prettier": "1.7.4"
   },
   "lint-staged": {
-    "*.js": ["npm run lint:script", "git add"],
-    "*.json": ["npm run lint:json", "git add"],
-    "*.scss": ["npm run lint:style", "git add"]
+    "*.js": ["eslint -c .eslintrc.yaml --fix", "git add"],
+    "*.json": ["prettier --print-width=200 --write", "git add"],
+    "*.scss": ["prettier --write", "git add"]
   },
   "scripts": {
-    "lint": "npm run lint:script && npm run lint:style && npm run lint:json",
-    "lint:script": "eslint --fix -c .eslintrc.yaml --ignore-path .gitignore **/*.js ",
-    "lint:style": "prettier --single-quote --print-width=80 --write '**/*.scss'",
-    "lint:json": "prettier --single-quote --print-width=120 --write '**/*.json'",
-    "precommit": "lint-staged"
+    "fix:config": "prettier --print-width=200 --write '**/*.json'",
+    "fix:script": "npm run test:script -- --fix",
+    "fix:style": "prettier --print-width=80 --write '**/*.scss'",
+    "fix": "npm run fix:script && npm run fix:config && npm run fix:style",
+    "precommit": "lint-staged",
+    "test:script": "eslint -c .eslintrc.yaml --ignore-path .gitignore **/*.js",
+    "test": "npm run lint:script && npm run fix:style && npm run fix:config"
   },
   "repository": {
     "type": "git",

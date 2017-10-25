@@ -23,11 +23,16 @@ rules:
   prefer-promise-reject-errors: 2
   prettier/prettier: [2, {
       bracketSpacing: false,
+      jsxBracketSameLine: false,
       printWidth: 80,
+      semi: true,
       singleQuote: true,
-      trailingComma: es5
+      tabWidth: 2,
+      trailingComma: es5,
+      useTabs: false,
     }
   ]
+  sort-imports: 2
   sort-keys: [2, asc, {caseSensitive: true, natural: true}]
   sort-vars: 2
   strict: [2, global]
