@@ -17,7 +17,7 @@
   "scripts": {
     "fix:config": "prettier --print-width=200 --write '**/*.json'",
     "fix:script": "npm run test:script -- --fix",
-    "fix:style": "prettier --print-width=80 --write '**/*.scss'",
+    "fix:style": "prettier --write '**/*.scss'",
     "fix": "npm run fix:script && npm run fix:config && npm run fix:style",
     "precommit": "lint-staged",
     "test:script": "eslint -c .eslintrc.yaml --ignore-path .gitignore **/*.js",
