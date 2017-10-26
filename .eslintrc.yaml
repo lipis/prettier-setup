@@ -21,17 +21,7 @@ rules:
   no-var: 2
   prefer-const: 2
   prefer-promise-reject-errors: 2
-  prettier/prettier: [2, {
-      bracketSpacing: false,
-      jsxBracketSameLine: false,
-      printWidth: 80,
-      semi: true,
-      singleQuote: true,
-      tabWidth: 2,
-      trailingComma: es5,
-      useTabs: false,
-    }
-  ]
+  prettier/prettier: 2
   sort-imports: 2
   sort-keys: [2, asc, {caseSensitive: true, natural: true}]
   sort-vars: 2
