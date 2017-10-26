@@ -17,8 +17,8 @@ npm run lint
 ## Tasks
 
 ```
-npm run lint:fix
-npm run lint:script
-npm run lint:style
-npm run lint:json
+npm run fix
+npm run fix:script
+npm run fix:style
+npm run fix:config
 ```
