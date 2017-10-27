@@ -21,7 +21,7 @@
     "fix": "npm run fix:script && npm run fix:config && npm run fix:style",
     "precommit": "lint-staged",
     "test:script": "eslint -c .eslintrc.yaml --ignore-path .gitignore **/*.js",
-    "test": "npm run fix:script"
+    "test": "npm run test:script"
   },
   "repository": {
     "type": "git",
