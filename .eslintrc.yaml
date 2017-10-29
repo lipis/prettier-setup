@@ -10,9 +10,11 @@ extends:
   - prettier
 
 rules:
+  curly: 2
   no-const-assign: 2
   no-dupe-class-members: 2
   no-else-return: 2
+  no-inner-declarations: 2
   no-lonely-if: 2
   no-magic-numbers: [2, {ignore: [-1, 0, 1]}]
   no-shadow: 2
@@ -21,6 +23,8 @@ rules:
   no-unused-vars: [2, {args: none}]
   no-useless-return: 2
   no-var: 2
+  one-var: [2, never]
+  prefer-arrow-callback: 2
   prefer-const: 2
   prefer-promise-reject-errors: 2
   prettier/prettier: 2

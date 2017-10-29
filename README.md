@@ -25,3 +25,9 @@ npm run fix:script
 npm run fix:style
 npm run fix:config
 ```
+
+
+### Prettier Projects
+
+- [wireapp/wire-webapp](https://github.com/wireapp/wire-webapp) ([#1729](https://github.com/wireapp/wire-webapp/pull/1729))
+- [wireapp/proteus.js](https://github.com/wireapp/proteus.js) ([#90](https://github.com/wireapp/proteus.js/pull/90))
