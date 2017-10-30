@@ -11,6 +11,7 @@ extends:
 
 rules:
   curly: 2
+  dot-notation: 2
   no-const-assign: 2
   no-dupe-class-members: 2
   no-else-return: 2
