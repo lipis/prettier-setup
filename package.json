@@ -2,12 +2,12 @@
   "name": "prettier-tasks",
   "license": "MIT",
   "devDependencies": {
-    "eslint-config-prettier": "2.6.0",
+    "eslint-config-prettier": "2.7.0",
     "eslint-plugin-prettier": "2.3.1",
     "eslint": "4.10.0",
     "husky": "0.14.3",
     "lint-staged": "4.3.0",
-    "prettier": "1.7.4"
+    "prettier": "1.8.1"
   },
   "lint-staged": {
     "*.js": ["eslint -c .eslintrc.yaml --fix", "git add"],
