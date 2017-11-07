@@ -9,6 +9,12 @@ plugins:
 extends:
   - prettier
 
+parserOptions:
+  ecmaVersion: 8
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+
 rules:
   curly: 2
   dot-notation: 2
