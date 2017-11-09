@@ -1,9 +1,6 @@
 # prettier-setup
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Greenkeeper badge](https://badges.greenkeeper.io/lipis/prettier-tasks.svg)](https://greenkeeper.io/)
-
-> Minimal configuration for [Prettier](https://github.com/prettier/prettier),
+> Basic configuration for [Prettier](https://github.com/prettier/prettier),
 > [ESLint](https://eslint.org/) and [Travis CI](https://travis-ci.org/).
 
 ## Prettier rules
