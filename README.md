@@ -49,7 +49,8 @@ npm test
 
 ```
 npm run fix
+npm run fix:config
+npm run fix:docs
 npm run fix:script
 npm run fix:style
-npm run fix:config
 ```
