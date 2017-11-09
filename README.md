@@ -1,14 +1,31 @@
-# prettier-tasks
+# prettier-setup
 
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Greenkeeper badge](https://badges.greenkeeper.io/lipis/prettier-tasks.svg)](https://greenkeeper.io/)
 
 > Minimal configuration for [Prettier](https://github.com/prettier/prettier),
 > [ESLint](https://eslint.org/) and [Travis CI](https://travis-ci.org/).
 
-## Default ESLint rules
+## Prettier rules
 
-> Check more in: [`.eslintrc.yaml`](/.eslintrc.yaml)
+> Change them in: [`.prettierrc.yaml`](/.prettierrc.yaml)
+
+| Rule                                                                          | Value   |
+| ----------------------------------------------------------------------------- | ------- |
+| [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)  | `false` |
+| [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets) | `false` |
+| [`printWidth`](https://prettier.io/docs/en/options.html#print-width)          | `80`    |
+| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)            | `true`  |
+| [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)    | `false` |
+| [`semi`](https://prettier.io/docs/en/options.html#semicolons)                 | `true`  |
+| [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)              | `true`  |
+| [`tabWidth`](https://prettier.io/docs/en/options.html#tab-width)              | `2`     |
+| [`trailingComma`](https://prettier.io/docs/en/options.html#trailing-commas)   | `all`   |
+| [`useTabs`](https://prettier.io/docs/en/options.html#tabs)                    | `false` |
+
+## ESLint rules
+
+> Change them in: [`.eslintrc.yaml`](/.eslintrc.yaml)
 
 * [`curly`](https://eslint.org/docs/rules/curly)
 * [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
