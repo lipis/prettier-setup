@@ -3,6 +3,29 @@
 > Basic configuration for [Prettier](https://github.com/prettier/prettier),
 > [ESLint](https://eslint.org/) and [Travis CI](https://travis-ci.org/).
 
+## Dev dependencies
+
+* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+* [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+* [eslint](https://github.com/eslint/eslint)
+* [husky](https://github.com/typicode/husky)
+* [lint-staged](https://github.com/okonet/lint-staged)
+* [prettier](https://github.com/prettier/prettier)
+
+### Install dependecies
+
+Using `npm`:
+
+```bash
+npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged prettier
+```
+
+Using `yarn`:
+
+```bash
+yarn add eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged prettier --dev --exact
+```
+
 ## Prettier rules
 
 > Change them in: [`.prettierrc.yaml`](/.prettierrc.yaml)
