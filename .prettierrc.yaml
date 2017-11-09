@@ -1,6 +1,8 @@
 bracketSpacing: false
 jsxBracketSameLine: false
 printWidth: 80
+proseWrap: true
+requirePragma: false
 semi: true
 singleQuote: true
 tabWidth: 2
