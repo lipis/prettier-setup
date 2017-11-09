@@ -7,7 +7,7 @@
     "eslint": "4.10.0",
     "husky": "0.14.3",
     "lint-staged": "4.3.0",
-    "prettier": "1.8.1"
+    "prettier": "1.8.2"
   },
   "lint-staged": {
     "*.js": ["eslint -c .eslintrc.yaml --fix", "git add"],
