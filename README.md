@@ -1,7 +1,6 @@
 # prettier-setup
 
-> Basic configuration for [Prettier](https://github.com/prettier/prettier),
-> [ESLint](https://eslint.org/) and [Travis CI](https://travis-ci.org/).
+> Basic configuration for [Prettier](https://github.com/prettier/prettier), [ESLint](https://eslint.org/) and [Travis CI](https://travis-ci.org/).
 
 ## Dev dependencies
 
@@ -35,7 +34,7 @@ yarn add eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged 
 | [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)  | `false` |
 | [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets) | `false` |
 | [`printWidth`](https://prettier.io/docs/en/options.html#print-width)          | `80`    |
-| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)            | `true`  |
+| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)            | `false` |
 | [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)    | `false` |
 | [`semi`](https://prettier.io/docs/en/options.html#semicolons)                 | `true`  |
 | [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)              | `true`  |
