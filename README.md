@@ -4,6 +4,8 @@
 
 This project is an example on how you could integrate Prettier, ESLint, Husky and Travis CI in your new or old project. The setup is very trivial and you will never argue again about the code format.
 
+![Third Way](https://imgs.xkcd.com/comics/third_way_2x.png)
+
 ## Table of contents
 
 * [Install ESLint and Prettier](#install-eslint-and-prettier)
