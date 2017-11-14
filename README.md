@@ -11,19 +11,61 @@
 * [lint-staged](https://github.com/okonet/lint-staged)
 * [prettier](https://github.com/prettier/prettier)
 
-### Install dependecies
+### Install ESLint and Prettier
 
-Using `npm`:
-
-```bash
-npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged prettier
-```
-
-Using `yarn`:
+#### Install the depndencies in your project
 
 ```bash
-yarn add eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged prettier --dev --exact
+npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint prettier
+# OR
+yarn add eslint-config-prettier eslint-plugin-prettier eslint prettier --dev --exact
 ```
+
+#### Setup the scripts
+
+Open the [`package.json`](/package.json) and add these to the `scripts`:
+
+```json
+"scripts": {
+  "fix:config": "prettier --print-width=200 --ignore-path .gitignore --write '**/*.json'",
+  "fix:docs": "prettier --ignore-path .gitignore --write '**/*.md'",
+  "fix:script": "npm run test:script -- --fix",
+  "fix:style": "prettier --ignore-path .gitignore --write '**/*.scss'",
+  "fix": "npm run fix:script && npm run fix:config && npm run fix:style && npm run fix:docs",
+  "test:script": "eslint --ignore-path .gitignore '**/*.js'",
+  "test": "npm run test:script"
+}
+```
+
+### Install Husky and commit hooks
+
+In order to make sure that all the files will be formatted correctly before commiting to the repo, you will have to setup the commit hooks.
+
+#### Install the depndencies in your project
+
+```bash
+npm install --save-dev --save-exact husky lint-staged
+# OR
+yarn add husky lint-staged --dev --exact
+```
+
+#### Setup the rules
+
+Open the [`package.json`](/package.json) and add these to the `scripts`:
+
+```json
+"lint-staged": {
+  "*.js": ["eslint --fix", "git add"],
+  "*.json": ["prettier --print-width=200 --write", "git add"],
+  "*.md": ["prettier --write", "git add"],
+  "*.scss": ["prettier --write", "git add"]
+},
+"scripts": {
+  "precommit": "lint-staged"
+},
+```
+
+---
 
 ## Prettier rules
 
