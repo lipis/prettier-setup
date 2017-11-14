@@ -1,10 +1,8 @@
 # prettier-setup
 
-> Basic configuration for [Prettier](https://github.com/prettier/prettier), [ESLint](https://eslint.org/) and [Travis CI](https://travis-ci.org/).
+> Basic configuration for [Prettier](https://github.com/prettier/prettier), [ESLint](https://eslint.org/), [Husky](https://github.com/typicode/husky) and [Travis CI](https://travis-ci.org/).
 
 This project is an example on how you could integrate Prettier, ESLint, Husky and Travis CI in your new or old project. The setup is very trivial and you will never argue again about the code format.
-
-[![Tabs versus Spaces](https://img.youtube.com/vi/SsoOG6ZeyUI/0.jpg)](https://www.youtube.com/watch?v=SsoOG6ZeyUI)
 
 ## Table of contents
 
@@ -19,12 +17,7 @@ This project is an example on how you could integrate Prettier, ESLint, Husky an
 
 ## Dependencies
 
-* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-* [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
-* [eslint](https://github.com/eslint/eslint)
-* [husky](https://github.com/typicode/husky)
-* [lint-staged](https://github.com/okonet/lint-staged)
-* [prettier](https://github.com/prettier/prettier)
+The projec using the following dependencies: [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), [eslint](https://github.com/eslint/eslint), [husky](https://github.com/typicode/husky), [lint-staged](https://github.com/okonet/lint-staged) and [prettier](https://github.com/prettier/prettier).
 
 ## Install ESLint and Prettier
 
