@@ -2,7 +2,7 @@
 
 > Basic configuration for [Prettier](https://github.com/prettier/prettier), [ESLint](https://eslint.org/), [Husky](https://github.com/typicode/husky) and [Travis CI](https://travis-ci.org/).
 
-This project is an example on how you could integrate Prettier, ESLint, Husky and Travis CI in your new or old project. The setup is very trivial and you will never argue again about the code format.
+This project is an example on how you could integrate **Prettier**, **ESLint**, **Husky** and **Travis CI** in your project. The setup is very trivial and you will never argue again about the code format.
 
 ![Third Way](https://imgs.xkcd.com/comics/third_way_2x.png)
 
