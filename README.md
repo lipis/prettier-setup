@@ -4,20 +4,15 @@
 
 This project is an example on how you could integrate Prettier, ESLint, Husky and Travis CI in your new or old project. The setup is very trivial and you will never argue again about the code format.
 
+[![Tabs versus Spaces](https://img.youtube.com/vi/SsoOG6ZeyUI/0.jpg)](https://www.youtube.com/watch?v=SsoOG6ZeyUI)
+
 ## Table of contents
 
-* [Dependencies](#dev-dependencies)
 * [Install ESLint and Prettier](#install-eslint-and-prettier)
 * [Install Husky and commit hooks](#install-husky-and-commit-hooks)
 * [Prettier rules](#prettier-rules)
 * [ESLint rules](#eslint-rules)
-* [Install](#install)
-* [Test](#test)
-* [Tasks](#tasks)
-
-## Dependencies
-
-The projec using the following dependencies: [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), [eslint](https://github.com/eslint/eslint), [husky](https://github.com/typicode/husky), [lint-staged](https://github.com/okonet/lint-staged) and [prettier](https://github.com/prettier/prettier).
+* [Dependencies](#dev-dependencies)
 
 ## Install ESLint and Prettier
 
@@ -120,3 +115,12 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 * [`sort-keys`](https://eslint.org/docs/rules/sort-keys)
 * [`sort-vars`](https://eslint.org/docs/rules/sort-vars)
 * [`strict`](https://eslint.org/docs/rules/strict)
+
+## Dependencies
+
+* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+* [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+* [eslint](https://github.com/eslint/eslint)
+* [husky](https://github.com/typicode/husky)
+* [lint-staged](https://github.com/okonet/lint-staged)
+* [prettier](https://github.com/prettier/prettier)
