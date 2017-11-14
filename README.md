@@ -6,7 +6,18 @@ This project is an example on how you could integrate Prettier, ESLint, Husky an
 
 [![Tabs versus Spaces](https://img.youtube.com/vi/SsoOG6ZeyUI/0.jpg)](https://www.youtube.com/watch?v=SsoOG6ZeyUI)
 
-## Dev dependencies
+## Table of contents
+
+* [Dependencies](#dev-dependencies)
+* [Install ESLint and Prettier](#install-eslint-and-prettier)
+* [Install Husky and commit hooks](#install-husky-and-commit-hooks)
+* [Prettier rules](#prettier-rules)
+* [ESLint rules](#eslint-rules)
+* [Install](#install)
+* [Test](#test)
+* [Tasks](#tasks)
+
+## Dependencies
 
 * [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 * [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
@@ -15,9 +26,9 @@ This project is an example on how you could integrate Prettier, ESLint, Husky an
 * [lint-staged](https://github.com/okonet/lint-staged)
 * [prettier](https://github.com/prettier/prettier)
 
-### Install ESLint and Prettier
+## Install ESLint and Prettier
 
-#### Install the depndencies in your project
+### Install them using `npm` or `yarn`
 
 ```bash
 npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint prettier
@@ -25,7 +36,7 @@ npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettie
 yarn add eslint-config-prettier eslint-plugin-prettier eslint prettier --dev --exact
 ```
 
-#### Setup the scripts
+### Setup the scripts
 
 Open the [`package.json`](/package.json) and add these to the `scripts`:
 
@@ -41,11 +52,11 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 }
 ```
 
-### Install Husky and commit hooks
+## Install Husky and commit hooks
 
 In order to make sure that all the files will be formatted correctly before commiting to the repo, you will have to setup the commit hooks.
 
-#### Install the depndencies in your project
+### Install them using `npm` or `yarn`
 
 ```bash
 npm install --save-dev --save-exact husky lint-staged
@@ -53,7 +64,7 @@ npm install --save-dev --save-exact husky lint-staged
 yarn add husky lint-staged --dev --exact
 ```
 
-#### Setup the rules
+### Setup the rules
 
 Open the [`package.json`](/package.json) and add these to the `scripts`:
 
@@ -66,14 +77,14 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 },
 "scripts": {
   "precommit": "lint-staged"
-},
+}
 ```
 
 ---
 
 ## Prettier rules
 
-> Change them in: [`.prettierrc.yaml`](/.prettierrc.yaml)
+> Adjust your own rules in by updating the [`.prettierrc.yaml`](/.prettierrc.yaml).
 
 | Rule                                                                          | Value\*     |
 | ----------------------------------------------------------------------------- | ----------- |
@@ -92,7 +103,7 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 
 ## ESLint rules
 
-> Change them in: [`.eslintrc.yaml`](/.eslintrc.yaml)
+> Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
 * [`curly`](https://eslint.org/docs/rules/curly)
 * [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
@@ -116,25 +127,3 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 * [`sort-keys`](https://eslint.org/docs/rules/sort-keys)
 * [`sort-vars`](https://eslint.org/docs/rules/sort-vars)
 * [`strict`](https://eslint.org/docs/rules/strict)
-
-## Install
-
-```bash
-npm install
-```
-
-## Test
-
-```
-npm test
-```
-
-## Tasks
-
-```
-npm run fix
-npm run fix:config
-npm run fix:docs
-npm run fix:script
-npm run fix:style
-```
