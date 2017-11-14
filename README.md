@@ -4,8 +4,6 @@
 
 This project is an example on how you could integrate Prettier, ESLint, Husky and Travis CI in your new or old project. The setup is very trivial and you will never argue again about the code format.
 
-[![Tabs versus Spaces](https://img.youtube.com/vi/SsoOG6ZeyUI/0.jpg)](https://www.youtube.com/watch?v=SsoOG6ZeyUI)
-
 ## Table of contents
 
 * [Install ESLint and Prettier](#install-eslint-and-prettier)
