@@ -1,33 +1,78 @@
 # prettier-setup
 
-> Basic configuration for [Prettier](https://github.com/prettier/prettier), [ESLint](https://eslint.org/) and [Travis CI](https://travis-ci.org/).
+> Basic configuration for [Prettier](https://github.com/prettier/prettier), [ESLint](https://eslint.org/), [Husky](https://github.com/typicode/husky) and [Travis CI](https://travis-ci.org/).
 
-## Dev dependencies
+This project is an example on how you could integrate **Prettier**, **ESLint**, **Husky** and **Travis CI** in your project. The setup is very trivial and you will never argue again about the code format.
 
-* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-* [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
-* [eslint](https://github.com/eslint/eslint)
-* [husky](https://github.com/typicode/husky)
-* [lint-staged](https://github.com/okonet/lint-staged)
-* [prettier](https://github.com/prettier/prettier)
+![Third Way](https://imgs.xkcd.com/comics/third_way_2x.png)
 
-### Install dependecies
+## Table of contents
 
-Using `npm`:
+* [Install ESLint and Prettier](#install-eslint-and-prettier)
+* [Install Husky and commit hooks](#install-husky-and-commit-hooks)
+* [Prettier rules](#prettier-rules)
+* [ESLint rules](#eslint-rules)
+* [Dependencies](#dev-dependencies)
 
-```bash
-npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged prettier
-```
+## Install ESLint and Prettier
 
-Using `yarn`:
+### Install them using `npm` or `yarn`
 
 ```bash
-yarn add eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged prettier --dev --exact
+npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint prettier
+# OR
+yarn add eslint-config-prettier eslint-plugin-prettier eslint prettier --dev --exact
 ```
+
+### Setup the scripts
+
+Open the [`package.json`](/package.json) and add these to the `scripts`:
+
+```json
+"scripts": {
+  "fix:config": "prettier --print-width=200 --ignore-path .gitignore --write '**/*.json'",
+  "fix:docs": "prettier --ignore-path .gitignore --write '**/*.md'",
+  "fix:script": "npm run test:script -- --fix",
+  "fix:style": "prettier --ignore-path .gitignore --write '**/*.scss'",
+  "fix": "npm run fix:script && npm run fix:config && npm run fix:style && npm run fix:docs",
+  "test:script": "eslint --ignore-path .gitignore '**/*.js'",
+  "test": "npm run test:script"
+}
+```
+
+## Install Husky and commit hooks
+
+In order to make sure that all the files will be formatted correctly before commiting to the repo, you will have to setup the commit hooks.
+
+### Install them using `npm` or `yarn`
+
+```bash
+npm install --save-dev --save-exact husky lint-staged
+# OR
+yarn add husky lint-staged --dev --exact
+```
+
+### Setup the rules
+
+Open the [`package.json`](/package.json) and add these to the `scripts`:
+
+```json
+"lint-staged": {
+  "*.js": ["eslint --fix", "git add"],
+  "*.json": ["prettier --print-width=200 --write", "git add"],
+  "*.md": ["prettier --write", "git add"],
+  "*.scss": ["prettier --write", "git add"]
+},
+"scripts": {
+  "precommit": "lint-staged"
+}
+```
+
+---
 
 ## Prettier rules
 
-> Change them in: [`.prettierrc.yaml`](/.prettierrc.yaml)
+> Adjust your own rules in by updating the [`.prettierrc.yaml`](/.prettierrc.yaml).
 
 | Rule                                                                          | Value\*     |
 | ----------------------------------------------------------------------------- | ----------- |
@@ -46,7 +91,7 @@ yarn add eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged 
 
 ## ESLint rules
 
-> Change them in: [`.eslintrc.yaml`](/.eslintrc.yaml)
+> Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
 * [`curly`](https://eslint.org/docs/rules/curly)
 * [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
@@ -71,24 +116,11 @@ yarn add eslint-config-prettier eslint-plugin-prettier eslint husky lint-staged 
 * [`sort-vars`](https://eslint.org/docs/rules/sort-vars)
 * [`strict`](https://eslint.org/docs/rules/strict)
 
-## Install
+## Dependencies
 
-```bash
-npm install
-```
-
-## Test
-
-```
-npm test
-```
-
-## Tasks
-
-```
-npm run fix
-npm run fix:config
-npm run fix:docs
-npm run fix:script
-npm run fix:style
-```
+* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+* [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+* [eslint](https://github.com/eslint/eslint)
+* [husky](https://github.com/typicode/husky)
+* [lint-staged](https://github.com/okonet/lint-staged)
+* [prettier](https://github.com/prettier/prettier)
