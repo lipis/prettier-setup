@@ -1,4 +1,4 @@
-# prettier-setup
+# prettier-setup [![Twitter Follow](https://img.shields.io/twitter/follow/prettiercode.svg?style=social&label=Follow+Prettier)]()
 
 > Basic configuration for [Prettier](https://prettier.io), [ESLint](https://eslint.org), [Husky](https://github.com/typicode/husky) and [Travis CI](https://travis-ci.org).
 
