@@ -1,6 +1,6 @@
 # prettier-setup
 
-> Basic configuration for [Prettier](https://github.com/prettier/prettier), [ESLint](https://eslint.org/), [Husky](https://github.com/typicode/husky) and [Travis CI](https://travis-ci.org/).
+> Basic configuration for [Prettier](https://prettier.io), [ESLint](https://eslint.org), [Husky](https://github.com/typicode/husky) and [Travis CI](https://travis-ci.org).
 
 This project is an example on how you could integrate **Prettier**, **ESLint**, **Husky** and **Travis CI** in your project. The setup is very trivial and you will never argue again about the code format.
 
