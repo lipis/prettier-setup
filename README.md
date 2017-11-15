@@ -72,7 +72,7 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 
 ## Prettier rules
 
-> Adjust your own rules in by updating the [`.prettierrc.yaml`](/.prettierrc.yaml).
+Adjust your own rules in by updating the [`.prettierrc.yaml`](/.prettierrc.yaml).
 
 | Rule                                                                          | Value\*     |
 | ----------------------------------------------------------------------------- | ----------- |
@@ -91,7 +91,7 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 
 ## ESLint rules
 
-> Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
+Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
 * [`curly`](https://eslint.org/docs/rules/curly)
 * [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
