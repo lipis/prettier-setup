@@ -15,6 +15,7 @@ The files that are currently being formatted in this project are: `.js`, `.json`
 * [Prettier rules](#prettier-rules)
 * [ESLint rules](#eslint-rules)
 * [Dependencies](#dev-dependencies)
+* [Examples](#examples)
 
 ## Install ESLint and Prettier
 
@@ -126,3 +127,13 @@ Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 * [husky](https://github.com/typicode/husky)
 * [lint-staged](https://github.com/okonet/lint-staged)
 * [prettier](https://github.com/prettier/prettier)
+
+---
+
+## Examples
+
+* [daneden/**animate.css**](https://github.com/daneden/animate.css/pull/762/files)
+* [electron/**electron**](https://github.com/electron/electron/pull/11143/files)
+* [wireapp/**wire-web-api-client**](https://github.com/wireapp/wire-web-api-client/pull/17/files)
+* [wireapp/**wire-web-packages**](https://github.com/wireapp/wire-web-packages/pull/6/files)
+* [wireapp/**wire-webapp**](https://github.com/wireapp/wire-webapp/pull/1729/files)
