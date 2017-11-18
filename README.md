@@ -134,6 +134,7 @@ Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
 * [daneden/**animate.css**](https://github.com/daneden/animate.css/pull/762/files)
 * [electron/**electron**](https://github.com/electron/electron/pull/11143/files)
+* [facebook/**draft-js**](https://github.com/facebook/draft-js/commit/cd20b992d4b054d70f756c258e5e75e518995e12)
 * [wireapp/**wire-desktop**](https://github.com/wireapp/wire-desktop/pull/1035/files)
 * [wireapp/**wire-web-api-client**](https://github.com/wireapp/wire-web-api-client/pull/17/files)
 * [wireapp/**wire-web-packages**](https://github.com/wireapp/wire-web-packages/pull/6/files)
