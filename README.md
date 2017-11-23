@@ -98,6 +98,7 @@ Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
 * [`curly`](https://eslint.org/docs/rules/curly)
 * [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
+* [`id-length`](https://eslint.org/docs/rules/id-length)
 * [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign)
 * [`no-dupe-class-members`](https://eslint.org/docs/rules/no-dupe-class-members)
 * [`no-else-return`](https://eslint.org/docs/rules/no-else-return)
