@@ -33,12 +33,12 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 
 ```json
 "scripts": {
-  "fix:config": "prettier --ignore-path .gitignore --write '**/*.json'",
-  "fix:docs": "prettier --ignore-path .gitignore --write '**/*.md'",
+  "fix:config": "prettier --ignore-path .gitignore --write \"**/*.json\"",
+  "fix:docs": "prettier --ignore-path .gitignore --write \"**/*.md\"",
   "fix:script": "npm run test:script -- --fix",
-  "fix:style": "prettier --ignore-path .gitignore --write '**/*.scss'",
+  "fix:style": "prettier --ignore-path .gitignore --write \"**/*.scss\"",
   "fix": "npm run fix:script && npm run fix:config && npm run fix:style && npm run fix:docs",
-  "test:script": "eslint --ignore-path .gitignore '**/*.js'",
+  "test:script": "eslint --ignore-path .gitignore \"**/*.js\"",
   "test": "npm run test:script"
 }
 ```
