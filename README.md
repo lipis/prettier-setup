@@ -33,7 +33,7 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 
 ```json
 "scripts": {
-  "fix:config": "prettier --print-width=200 --ignore-path .gitignore --write '**/*.json'",
+  "fix:config": "prettier --ignore-path .gitignore --write '**/*.json'",
   "fix:docs": "prettier --ignore-path .gitignore --write '**/*.md'",
   "fix:script": "npm run test:script -- --fix",
   "fix:style": "prettier --ignore-path .gitignore --write '**/*.scss'",
@@ -62,7 +62,7 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 ```json
 "lint-staged": {
   "*.js": ["eslint --fix", "git add"],
-  "*.json": ["prettier --print-width=200 --write", "git add"],
+  "*.json": ["prettier --write", "git add"],
   "*.md": ["prettier --write", "git add"],
   "*.scss": ["prettier --write", "git add"]
 },
