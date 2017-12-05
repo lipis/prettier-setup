@@ -77,18 +77,19 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 
 Adjust your own rules in by updating the [`.prettierrc.yaml`](/.prettierrc.yaml).
 
-| Rule                                                                          | Value\*     |
-| ----------------------------------------------------------------------------- | ----------- |
-| [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)  | **`false`** |
-| [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets) | `false`     |
-| [`printWidth`](https://prettier.io/docs/en/options.html#print-width)          | `80`        |
-| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)            | **`false`** |
-| [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)    | `false`     |
-| [`semi`](https://prettier.io/docs/en/options.html#semicolons)                 | `true`      |
-| [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)              | **`true`**  |
-| [`tabWidth`](https://prettier.io/docs/en/options.html#tab-width)              | `2`         |
-| [`trailingComma`](https://prettier.io/docs/en/options.html#trailing-commas)   | **`all`**   |
-| [`useTabs`](https://prettier.io/docs/en/options.html#tabs)                    | `false`     |
+| Rule                                                                                 | Value\*     |
+| ------------------------------------------------------------------------------------ | ----------- |
+| [`arrowParens`](https://prettier.io/docs/en/options.html#arrow-function-parentheses) | `avoid`     |
+| [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)         | **`false`** |
+| [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets)        | `false`     |
+| [`printWidth`](https://prettier.io/docs/en/options.html#print-width)                 | `80`        |
+| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)                   | **`never`** |
+| [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)           | `false`     |
+| [`semi`](https://prettier.io/docs/en/options.html#semicolons)                        | `true`      |
+| [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)                     | **`true`**  |
+| [`tabWidth`](https://prettier.io/docs/en/options.html#tab-width)                     | `2`         |
+| [`trailingComma`](https://prettier.io/docs/en/options.html#trailing-commas)          | **`all`**   |
+| [`useTabs`](https://prettier.io/docs/en/options.html#tabs)                           | `false`     |
 
 \* Values in **bold** are not the default ones.
 
