@@ -6,8 +6,6 @@ This project is an example on how you could integrate **Prettier**, **ESLint**, 
 
 The files that are currently being formatted in this project are: `.js`, `.json`, `.scss` and `.md`, but you can easily adjust them to your own needs.
 
-![Third Way](https://imgs.xkcd.com/comics/third_way_2x.png)
-
 ## Table of contents
 
 * [Install ESLint and Prettier](#install-eslint-and-prettier)
@@ -129,15 +127,3 @@ Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 * [husky](https://github.com/typicode/husky)
 * [lint-staged](https://github.com/okonet/lint-staged)
 * [prettier](https://github.com/prettier/prettier)
-
----
-
-## Examples
-
-* [daneden/**animate.css**](https://github.com/daneden/animate.css/pull/762/files)
-* [electron/**electron**](https://github.com/electron/electron/pull/11143/files)
-* [facebook/**draft-js**](https://github.com/facebook/draft-js/commit/cd20b992d4b054d70f756c258e5e75e518995e12)
-* [wireapp/**wire-desktop**](https://github.com/wireapp/wire-desktop/pull/1035/files)
-* [wireapp/**wire-web-api-client**](https://github.com/wireapp/wire-web-api-client/pull/17/files)
-* [wireapp/**wire-web-packages**](https://github.com/wireapp/wire-web-packages/pull/6/files)
-* [wireapp/**wire-webapp**](https://github.com/wireapp/wire-webapp/pull/1729/files)
