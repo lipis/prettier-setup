@@ -13,7 +13,6 @@ The files that are currently being formatted in this project are: `.js`, `.json`
 * [Prettier rules](#prettier-rules)
 * [ESLint rules](#eslint-rules)
 * [Dependencies](#dev-dependencies)
-* [Examples](#examples)
 
 ## Install ESLint and Prettier
 
