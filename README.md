@@ -1,8 +1,8 @@
 # prettier-setup [![Twitter Follow](https://img.shields.io/twitter/follow/prettiercode.svg?style=social&label=Follow+Prettier)](https://twitter.com/PrettierCode)
 
-> Basic configuration for [Prettier](https://prettier.io), [ESLint](https://eslint.org), [Husky](https://github.com/typicode/husky) and [Travis CI](https://travis-ci.org).
+> Basic configuration for [Prettier](https://prettier.io), [ESLint](https://eslint.org) and [Husky](https://github.com/typicode/husky).
 
-This project is an example on how you could integrate **Prettier**, **ESLint**, **Husky** and **Travis CI** in your project. The setup is very easy and you will never argue again about the code format.
+This project is an example on how you could integrate **Prettier**, **ESLint** and **Husky** in your project. The setup is very easy and you will never argue again about the code format.
 
 The files that are currently being formatted in this project are: `.js`, `.json`, `.scss` and `.md`, but you can easily adjust them to your own needs.
 
