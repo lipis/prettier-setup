@@ -2,9 +2,9 @@
   "name": "prettier-setup",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "4.15.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.4.0",
-    "eslint": "4.15.0",
     "husky": "0.14.3",
     "lint-staged": "6.0.0",
     "prettier": "1.10.2"
