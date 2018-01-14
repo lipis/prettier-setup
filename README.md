@@ -12,7 +12,7 @@ The files that are currently being formatted in this project are: `.js`, `.json`
 * [Install Husky and commit hooks](#install-husky-and-commit-hooks)
 * [Prettier rules](#prettier-rules)
 * [ESLint rules](#eslint-rules)
-* [Dependencies](#dev-dependencies)
+* [Dependencies](#dependencies)
 
 ## Install ESLint and Prettier
 
