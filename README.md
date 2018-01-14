@@ -1,32 +1,42 @@
 # prettier-setup [![Twitter Follow](https://img.shields.io/twitter/follow/prettiercode.svg?style=social&label=Follow+Prettier)](https://twitter.com/PrettierCode)
 
-> Basic configuration for [Prettier](https://prettier.io), [ESLint](https://eslint.org) and [Husky](https://github.com/typicode/husky).
+This project sets up formatting and linting tools to keep your code clean and consistent, so you never have to argue about style again:
 
-This project is an example on how you could integrate **Prettier**, **ESLint** and **Husky** in your project. The setup is very easy and you will never argue again about the code format.
+* [Prettier](https://prettier.io) is an opinionated code formatter that enforces a consistent style by parsing your code and re-printing it with its own rules.
+* [ESLint](https://eslint.org) checks JavaScript code for stylistic or programming errors.
+* [Husky](https://github.com/typicode/husky) uses Git hooks to ensure that **Prettier** and **ESLint** run on all staged changes to fix files before committing.
 
-The files that are currently being formatted in this project are: `.js`, `.json`, `.scss` and `.md`, but you can easily adjust them to your own needs.
+The setup described here will format JavaScript, JSON, Sass, and Markdown files, but you can adjust the settings to your own needs.
 
-## Table of contents
+## Contents
 
-* [Install ESLint and Prettier](#install-eslint-and-prettier)
-* [Install Husky and commit hooks](#install-husky-and-commit-hooks)
+* [Installing ESLint and Prettier](#installing-eslint-and-prettier)
+* [Installing Husky and commit hooks](#installing-husky-and-commit-hooks)
 * [Prettier rules](#prettier-rules)
 * [ESLint rules](#eslint-rules)
-* [Dependencies](#dev-dependencies)
+* [Dependencies](#dependencies)
 
-## Install ESLint and Prettier
+## Installing ESLint and Prettier
 
-### Install them using `npm` or `yarn`
+This step adds ESLint and Prettier to your project's dependencies so they're available locally regardless of the system configuration.
+
+You can install them with either `npm` or `yarn`:
+
+### Install with `npm`
 
 ```bash
 npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint prettier
-# OR
+```
+
+### Install with `yarn`
+
+```bash
 yarn add eslint-config-prettier eslint-plugin-prettier eslint prettier --dev --exact
 ```
 
-### Setup the scripts
+### Set up the scripts
 
-Open the [`package.json`](/package.json) and add these to the `scripts`:
+Open the [`package.json`](/package.json) file in your project and add the following `scripts` entries:
 
 ```json
 "scripts": {
@@ -40,21 +50,25 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 }
 ```
 
-## Install Husky and commit hooks
+## Installing Husky and commit hooks
 
-In order to make sure that all the files will be formatted correctly before commiting to the repo, you will have to setup the commit hooks.
+Set up Husky and the `lint-staged` commit hooks to format changed files before each commit.
 
-### Install them using `npm` or `yarn`
+### Install with `npm`
 
 ```bash
 npm install --save-dev --save-exact husky lint-staged
-# OR
+```
+
+### Install with `yarn`
+
+```bash
 yarn add husky lint-staged --dev --exact
 ```
 
-### Setup the rules
+### Set up the rules
 
-Open the [`package.json`](/package.json) and add these to the `scripts`:
+Add the `lint-staged` rules to the [`package.json`](/package.json) file in your project:
 
 ```json
 "lint-staged": {
@@ -63,6 +77,11 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
   "*.md": ["prettier --write", "git add"],
   "*.scss": ["prettier --write", "git add"]
 },
+```
+
+Add the `precommit` hook to the `scripts`:
+
+```json
 "scripts": {
   "precommit": "lint-staged"
 }
@@ -72,27 +91,27 @@ Open the [`package.json`](/package.json) and add these to the `scripts`:
 
 ## Prettier rules
 
-Adjust your own rules in by updating the [`.prettierrc.yaml`](/.prettierrc.yaml).
+This project defines the following settings in the [`.prettierrc.yaml`](/.prettierrc.yaml) file. You can adjust these values according to your own preferences.
 
-| Rule                                                                                 | Value\*     |
-| ------------------------------------------------------------------------------------ | ----------- |
-| [`arrowParens`](https://prettier.io/docs/en/options.html#arrow-function-parentheses) | `avoid`     |
-| [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)         | **`false`** |
-| [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets)        | `false`     |
-| [`printWidth`](https://prettier.io/docs/en/options.html#print-width)                 | `80`        |
-| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)                   | **`never`** |
-| [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)           | `false`     |
-| [`semi`](https://prettier.io/docs/en/options.html#semicolons)                        | `true`      |
-| [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)                     | **`true`**  |
-| [`tabWidth`](https://prettier.io/docs/en/options.html#tab-width)                     | `2`         |
-| [`trailingComma`](https://prettier.io/docs/en/options.html#trailing-commas)          | **`all`**   |
-| [`useTabs`](https://prettier.io/docs/en/options.html#tabs)                           | `false`     |
+| Rule                                                                                 | Value\*      |
+| ------------------------------------------------------------------------------------ | ------------ |
+| [`arrowParens`](https://prettier.io/docs/en/options.html#arrow-function-parentheses) | `avoid`      |
+| [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)         | **`false`**  |
+| [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets)        | `false`      |
+| [`printWidth`](https://prettier.io/docs/en/options.html#print-width)                 | `80`         |
+| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)                   | `preserve`   |
+| [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)           | `false`      |
+| [`semi`](https://prettier.io/docs/en/options.html#semicolons)                        | `true`       |
+| [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)                     | **`true`**   |
+| [`tabWidth`](https://prettier.io/docs/en/options.html#tab-width)                     | `2`          |
+| [`trailingComma`](https://prettier.io/docs/en/options.html#trailing-commas)          | **`all`**    |
+| [`useTabs`](https://prettier.io/docs/en/options.html#tabs)                           | `false`      |
 
-\* Values in **bold** are not the default ones.
+\* Values in **bold** differ from the Prettier defaults.
 
 ## ESLint rules
 
-Adjust your own rules in by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
+Adjust your own rules by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
 * [`curly`](https://eslint.org/docs/rules/curly)
 * [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
