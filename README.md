@@ -99,7 +99,7 @@ This project defines the following settings in the [`.prettierrc.yaml`](/.pretti
 | [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)         | **`false`**  |
 | [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets)        | `false`      |
 | [`printWidth`](https://prettier.io/docs/en/options.html#print-width)                 | `80`         |
-| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)                   | `"preserve"` |
+| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)                   | `preserve`   |
 | [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)           | `false`      |
 | [`semi`](https://prettier.io/docs/en/options.html#semicolons)                        | `true`       |
 | [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)                     | **`true`**   |
