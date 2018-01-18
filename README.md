@@ -36,19 +36,20 @@ npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettie
 
 ### Set up the scripts
 
-Open the [`package.json`](/package.json) file in your project and add the following `scripts` entries:
+Open the [`package.json`](/package.json) file in your project and add the following `scripts`\* entries:
 
 ```json
 "scripts": {
-  "fix:config": "prettier --ignore-path .gitignore --write \"**/*.json\"",
-  "fix:docs": "prettier --ignore-path .gitignore --write \"**/*.md\"",
-  "fix:script": "npm run test:script -- --fix",
-  "fix:style": "prettier --ignore-path .gitignore --write \"**/*.scss\"",
-  "fix": "npm run fix:script && npm run fix:config && npm run fix:style && npm run fix:docs",
-  "test:script": "eslint --ignore-path .gitignore \"**/*.js\"",
-  "test": "npm run test:script"
+  "fix:assets": "prettier --ignore-path .gitignore --write \"**/*.{json,md,scss}\"",
+  "fix:code": "yarn test:script -- --fix",
+  "fix": "yarn fix:code && yarn fix:assets",
+  "precommit": "lint-staged",
+  "test:script": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.js\"",
+  "test": "yarn test:script"
 }
 ```
+
+* If you are using `npm`, replace `yarn` with `npm run` in the above section.
 
 ## Installing Husky and commit hooks
 
@@ -73,9 +74,7 @@ Add the `lint-staged` rules to the [`package.json`](/package.json) file in your 
 ```json
 "lint-staged": {
   "*.js": ["eslint --fix", "git add"],
-  "*.json": ["prettier --write", "git add"],
-  "*.md": ["prettier --write", "git add"],
-  "*.scss": ["prettier --write", "git add"]
+  "*.{json,md,scss}": ["prettier --write", "git add"]
 },
 ```
 
