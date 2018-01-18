@@ -49,7 +49,7 @@ Open the [`package.json`](/package.json) file in your project and add the follow
 }
 ```
 
-* If you are using `npm`, replace `yarn` with `npm run` in the above section.
+\* If you are using `npm`, replace `yarn` with `npm run` in the above section.
 
 ## Installing Husky and commit hooks
 
