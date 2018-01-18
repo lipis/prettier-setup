@@ -20,18 +20,18 @@ The setup described here will format JavaScript, JSON, Sass, and Markdown files,
 
 This step adds ESLint and Prettier to your project's dependencies so they're available locally regardless of the system configuration.
 
-You can install them with either `npm` or `yarn`:
-
-### Install with `npm`
-
-```bash
-npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint prettier
-```
+You can install them with either `yarn` or `npm`:
 
 ### Install with `yarn`
 
 ```bash
 yarn add eslint-config-prettier eslint-plugin-prettier eslint prettier --dev --exact
+```
+
+### Install with `npm`
+
+```bash
+npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint prettier
 ```
 
 ### Set up the scripts
@@ -54,16 +54,16 @@ Open the [`package.json`](/package.json) file in your project and add the follow
 
 Set up Husky and the `lint-staged` commit hooks to format changed files before each commit.
 
-### Install with `npm`
-
-```bash
-npm install --save-dev --save-exact husky lint-staged
-```
-
 ### Install with `yarn`
 
 ```bash
 yarn add husky lint-staged --dev --exact
+```
+
+### Install with `npm`
+
+```bash
+npm install --save-dev --save-exact husky lint-staged
 ```
 
 ### Set up the rules
@@ -93,19 +93,19 @@ Add the `precommit` hook to the `scripts`:
 
 This project defines the following settings in the [`.prettierrc.yaml`](/.prettierrc.yaml) file. You can adjust these values according to your own preferences.
 
-| Rule                                                                                 | Value\*      |
-| ------------------------------------------------------------------------------------ | ------------ |
-| [`arrowParens`](https://prettier.io/docs/en/options.html#arrow-function-parentheses) | `avoid`      |
-| [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)         | **`false`**  |
-| [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets)        | `false`      |
-| [`printWidth`](https://prettier.io/docs/en/options.html#print-width)                 | `80`         |
-| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)                   | `preserve`   |
-| [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)           | `false`      |
-| [`semi`](https://prettier.io/docs/en/options.html#semicolons)                        | `true`       |
-| [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)                     | **`true`**   |
-| [`tabWidth`](https://prettier.io/docs/en/options.html#tab-width)                     | `2`          |
-| [`trailingComma`](https://prettier.io/docs/en/options.html#trailing-commas)          | **`all`**    |
-| [`useTabs`](https://prettier.io/docs/en/options.html#tabs)                           | `false`      |
+| Rule                                                                                 | Value\*     |
+| ------------------------------------------------------------------------------------ | ----------- |
+| [`arrowParens`](https://prettier.io/docs/en/options.html#arrow-function-parentheses) | `avoid`     |
+| [`bracketSpacing`](https://prettier.io/docs/en/options.html#bracket-spacing)         | **`false`** |
+| [`jsxBracketSameLine`](https://prettier.io/docs/en/options.html#jsx-brackets)        | `false`     |
+| [`printWidth`](https://prettier.io/docs/en/options.html#print-width)                 | `80`        |
+| [`proseWrap`](https://prettier.io/docs/en/options.html#prose-wrap)                   | `preserve`  |
+| [`requirePragma`](https://prettier.io/docs/en/options.html#require-pragma)           | `false`     |
+| [`semi`](https://prettier.io/docs/en/options.html#semicolons)                        | `true`      |
+| [`singleQuote`](https://prettier.io/docs/en/options.html#quotes)                     | **`true`**  |
+| [`tabWidth`](https://prettier.io/docs/en/options.html#tab-width)                     | `2`         |
+| [`trailingComma`](https://prettier.io/docs/en/options.html#trailing-commas)          | **`all`**   |
+| [`useTabs`](https://prettier.io/docs/en/options.html#tabs)                           | `false`     |
 
 \* Values in **bold** differ from the Prettier defaults.
 
