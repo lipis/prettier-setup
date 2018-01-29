@@ -18,8 +18,9 @@
     "fix:code": "yarn test:code -- --fix",
     "fix": "yarn fix:code && yarn fix:assets",
     "precommit": "lint-staged",
+    "test:assets": "prettier --ignore-path .gitignore --list-different \"**/*.{json,md,scss}\"",
     "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.js\"",
-    "test": "yarn test:code"
+    "test": "yarn test:assets && yarn test:code"
   },
   "repository": {
     "type": "git",
