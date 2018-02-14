@@ -40,11 +40,13 @@ Open the [`package.json`](/package.json) file in your project and add the follow
 
 ```json
 "scripts": {
-  "fix:assets": "prettier --ignore-path .gitignore --write \"**/*.{json,md,scss}\"",
-  "fix:code": "yarn test:code -- --fix",
+  "fix:assets": "yarn prettier --write",
+  "fix:code": "yarn test:code --fix",
   "fix": "yarn fix:code && yarn fix:assets",
+  "prettier": "prettier --ignore-path .gitignore  \"**/*.{json,md,scss}\"",
+  "test:assets": "yarn prettier --list-different",
   "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.js\"",
-  "test": "yarn test:code"
+  "test": "yarn test:assets && yarn test:code"
 }
 ```
 
