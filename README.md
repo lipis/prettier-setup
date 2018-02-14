@@ -43,7 +43,6 @@ Open the [`package.json`](/package.json) file in your project and add the follow
   "fix:assets": "prettier --ignore-path .gitignore --write \"**/*.{json,md,scss}\"",
   "fix:code": "yarn test:code -- --fix",
   "fix": "yarn fix:code && yarn fix:assets",
-  "precommit": "lint-staged",
   "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.js\"",
   "test": "yarn test:code"
 }
