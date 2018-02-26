@@ -25,13 +25,13 @@ You can install them with either `yarn` or `npm`:
 ### Install with `yarn`
 
 ```bash
-yarn add eslint-config-prettier eslint-plugin-prettier eslint prettier --dev --exact
+yarn add eslint-{config,plugin}-prettier eslint prettier --dev --exact
 ```
 
 ### Install with `npm`
 
 ```bash
-npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier eslint prettier
+npm install eslint-{config,plugin}-prettier eslint prettier --save-dev --save-exact 
 ```
 
 ### Set up the scripts
