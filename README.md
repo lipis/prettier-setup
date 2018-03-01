@@ -31,7 +31,7 @@ yarn add eslint-{config,plugin}-prettier eslint prettier --dev --exact
 ### Install with `npm`
 
 ```bash
-npm install eslint-{config,plugin}-prettier eslint prettier --save-dev --save-exact 
+npm install eslint-{config,plugin}-prettier eslint prettier --save-dev --save-exact
 ```
 
 ### Set up the scripts
