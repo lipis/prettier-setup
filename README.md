@@ -12,15 +12,13 @@ The setup described here will format JavaScript, JSON, Sass, and Markdown files,
 
 This step adds ESLint and Prettier to your project's dependencies so they're available locally regardless of the system configuration.
 
-You can install them with either `yarn` or `npm`:
-
 ### Install with `yarn`
 
 ```bash
 yarn add eslint-{config,plugin}-prettier eslint prettier --dev --exact
 ```
 
-<details><summary>Install with `npm`</summary><p>
+<details><summary>Install with <code>npm</code></summary><p>
 
 ```bash
 npm install eslint-{config,plugin}-prettier eslint prettier --save-dev --save-exact
@@ -56,7 +54,7 @@ Set up Husky and the `lint-staged` commit hooks to format changed files before e
 yarn add husky lint-staged --dev --exact
 ```
 
-<details><summary>Install with `npm`</summary><p>
+<details><summary>Install with <code>npm</code></summary><p>
 
 ```bash
 npm install husky lint-staged --save-dev --save-exact
