@@ -20,11 +20,13 @@ You can install them with either `yarn` or `npm`:
 yarn add eslint-{config,plugin}-prettier eslint prettier --dev --exact
 ```
 
-### Install with `npm`
+<details><summary>Install with `npm`</summary><p>
 
 ```bash
 npm install eslint-{config,plugin}-prettier eslint prettier --save-dev --save-exact
 ```
+
+</p></details>
 
 ### Set up the scripts
 
@@ -54,11 +56,13 @@ Set up Husky and the `lint-staged` commit hooks to format changed files before e
 yarn add husky lint-staged --dev --exact
 ```
 
-### Install with `npm`
+<details><summary>Install with `npm`</summary><p>
 
 ```bash
 npm install husky lint-staged --save-dev --save-exact
 ```
+
+</p></details>
 
 ### Set up the rules
 
