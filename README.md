@@ -12,9 +12,6 @@ The setup described here will format JavaScript, JSON, Sass, and Markdown files,
 
 * [Installing ESLint and Prettier](#installing-eslint-and-prettier)
 * [Installing Husky and commit hooks](#installing-husky-and-commit-hooks)
-* [Prettier rules](#prettier-rules)
-* [ESLint rules](#eslint-rules)
-* [Dependencies](#dependencies)
 
 ## Installing ESLint and Prettier
 
@@ -65,7 +62,7 @@ yarn add husky lint-staged --dev --exact
 ### Install with `npm`
 
 ```bash
-npm install --save-dev --save-exact husky lint-staged
+npm install husky lint-staged --save-dev --save-exact
 ```
 
 ### Set up the rules
@@ -89,7 +86,7 @@ Add the `precommit` hook to the `scripts`:
 
 ---
 
-## Prettier rules
+<details><summary>Prettier rules</summary><p>
 
 This project defines the following settings in the [`.prettierrc.yaml`](/.prettierrc.yaml) file. You can adjust these values according to your own preferences.
 
@@ -109,7 +106,9 @@ This project defines the following settings in the [`.prettierrc.yaml`](/.pretti
 
 \* Values in **bold** differ from the Prettier defaults.
 
-## ESLint rules
+</p></details>
+
+<details><summary>ESLint rules</summary><p>
 
 Adjust your own rules by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
@@ -136,8 +135,9 @@ Adjust your own rules by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 * [`sort-keys`](https://eslint.org/docs/rules/sort-keys)
 * [`sort-vars`](https://eslint.org/docs/rules/sort-vars)
 * [`strict`](https://eslint.org/docs/rules/strict)
+  </p></details>
 
-## Dependencies
+<details><summary>Dependencies</summary><p>
 
 * [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 * [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
@@ -145,3 +145,4 @@ Adjust your own rules by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 * [husky](https://github.com/typicode/husky)
 * [lint-staged](https://github.com/okonet/lint-staged)
 * [prettier](https://github.com/prettier/prettier)
+  </p></details>
