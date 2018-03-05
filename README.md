@@ -8,11 +8,6 @@ This project sets up formatting and linting tools to keep your code clean and co
 
 The setup described here will format JavaScript, JSON, Sass, and Markdown files, but you can adjust the settings to your own needs.
 
-## Contents
-
-* [Installing ESLint and Prettier](#installing-eslint-and-prettier)
-* [Installing Husky and commit hooks](#installing-husky-and-commit-hooks)
-
 ## Installing ESLint and Prettier
 
 This step adds ESLint and Prettier to your project's dependencies so they're available locally regardless of the system configuration.
