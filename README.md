@@ -32,13 +32,13 @@ Open the [`package.json`](/package.json) file in your project and add the follow
 
 ```json
 "scripts": {
-  "fix:assets": "yarn prettier --write",
-  "fix:code": "yarn test:code --fix",
-  "fix": "yarn fix:code && yarn fix:assets",
+  "fix:other": "yarn prettier --write",
+  "fix:js": "yarn test:js --fix",
+  "fix": "yarn fix:js && yarn fix:other",
   "prettier": "prettier --ignore-path .gitignore  \"**/*.{json,md,scss}\"",
-  "test:assets": "yarn prettier --list-different",
-  "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
-  "test": "yarn test:assets && yarn test:code"
+  "test:other": "yarn prettier --list-different",
+  "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
+  "test": "yarn test:other && yarn test:js"
 }
 ```
 
