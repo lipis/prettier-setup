@@ -35,7 +35,7 @@ Open the [`package.json`](/package.json) file in your project and add the follow
   "fix:other": "yarn prettier --write",
   "fix:js": "yarn test:js --fix",
   "fix": "yarn fix:js && yarn fix:other",
-  "prettier": "prettier --ignore-path .gitignore  \"**/*.{json,md,scss}\"",
+  "prettier": "prettier \"**/*.{json,md,scss}\"",
   "test:other": "yarn prettier --list-different",
   "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
   "test": "yarn test:other && yarn test:js"
