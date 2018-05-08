@@ -85,7 +85,7 @@ Add the `precommit` hook to the `scripts`:
 
 <details><summary>Prettier rules</summary><p>
 
-This project defines the following settings in the [`.prettierrc.yaml`](/.prettierrc.yaml) file. You can adjust these values according to your own preferences.
+This project defines the following settings in the [`.prettierrc.json`](/.prettierrc.json) file. You can adjust these values according to your own preferences.
 
 | Rule                                                                                 | Value\*     |
 | ------------------------------------------------------------------------------------ | ----------- |
