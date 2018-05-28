@@ -2,9 +2,9 @@
 
 This project sets up formatting and linting tools to keep your code clean and consistent, so you never have to argue about style again:
 
-* [Prettier](https://prettier.io) is an opinionated code formatter that enforces a consistent style by parsing your code and re-printing it with its own rules.
-* [ESLint](https://eslint.org) checks JavaScript code for stylistic or programming errors.
-* [Husky](https://github.com/typicode/husky) uses Git hooks to ensure that **Prettier** and **ESLint** run on all staged changes to fix files before committing.
+- [Prettier](https://prettier.io) is an opinionated code formatter that enforces a consistent style by parsing your code and re-printing it with its own rules.
+- [ESLint](https://eslint.org) checks JavaScript code for stylistic or programming errors.
+- [Husky](https://github.com/typicode/husky) uses Git hooks to ensure that **Prettier** and **ESLint** run on all staged changes to fix files before committing.
 
 The setup described here will format JavaScript, JSON, Sass, and Markdown files, but you can adjust the settings to your own needs.
 
@@ -109,37 +109,37 @@ This project defines the following settings in the [`.prettierrc.json`](/.pretti
 
 Adjust your own rules by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
 
-* [`curly`](https://eslint.org/docs/rules/curly)
-* [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
-* [`id-length`](https://eslint.org/docs/rules/id-length)
-* [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign)
-* [`no-dupe-class-members`](https://eslint.org/docs/rules/no-dupe-class-members)
-* [`no-else-return`](https://eslint.org/docs/rules/no-else-return)
-* [`no-inner-declarations`](https://eslint.org/docs/rules/no-inner-declarations)
-* [`no-lonely-if`](https://eslint.org/docs/rules/no-lonely-if)
-* [`no-magic-numbers`](https://eslint.org/docs/rules/no-magic-numbers)
-* [`no-shadow`](https://eslint.org/docs/rules/no-shadow)
-* [`no-unneeded-ternary`](https://eslint.org/docs/rules/no-unneeded-ternary)
-* [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions)
-* [`no-unused-vars`](https://eslint.org/docs/rules/no-unused-vars)
-* [`no-useless-return`](https://eslint.org/docs/rules/no-useless-return)
-* [`no-var`](https://eslint.org/docs/rules/no-var)
-* [`one-var`](https://eslint.org/docs/rules/one-var)
-* [`prefer-arrow-callback`](https://eslint.org/docs/rules/prefer-arrow-callback)
-* [`prefer-const`](https://eslint.org/docs/rules/prefer-const)
-* [`prefer-promise-reject-errors`](https://eslint.org/docs/rules/prefer-promise-reject-errors)
-* [`sort-imports`](https://eslint.org/docs/rules/sort-imports)
-* [`sort-keys`](https://eslint.org/docs/rules/sort-keys)
-* [`sort-vars`](https://eslint.org/docs/rules/sort-vars)
-* [`strict`](https://eslint.org/docs/rules/strict)
+- [`curly`](https://eslint.org/docs/rules/curly)
+- [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
+- [`id-length`](https://eslint.org/docs/rules/id-length)
+- [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign)
+- [`no-dupe-class-members`](https://eslint.org/docs/rules/no-dupe-class-members)
+- [`no-else-return`](https://eslint.org/docs/rules/no-else-return)
+- [`no-inner-declarations`](https://eslint.org/docs/rules/no-inner-declarations)
+- [`no-lonely-if`](https://eslint.org/docs/rules/no-lonely-if)
+- [`no-magic-numbers`](https://eslint.org/docs/rules/no-magic-numbers)
+- [`no-shadow`](https://eslint.org/docs/rules/no-shadow)
+- [`no-unneeded-ternary`](https://eslint.org/docs/rules/no-unneeded-ternary)
+- [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions)
+- [`no-unused-vars`](https://eslint.org/docs/rules/no-unused-vars)
+- [`no-useless-return`](https://eslint.org/docs/rules/no-useless-return)
+- [`no-var`](https://eslint.org/docs/rules/no-var)
+- [`one-var`](https://eslint.org/docs/rules/one-var)
+- [`prefer-arrow-callback`](https://eslint.org/docs/rules/prefer-arrow-callback)
+- [`prefer-const`](https://eslint.org/docs/rules/prefer-const)
+- [`prefer-promise-reject-errors`](https://eslint.org/docs/rules/prefer-promise-reject-errors)
+- [`sort-imports`](https://eslint.org/docs/rules/sort-imports)
+- [`sort-keys`](https://eslint.org/docs/rules/sort-keys)
+- [`sort-vars`](https://eslint.org/docs/rules/sort-vars)
+- [`strict`](https://eslint.org/docs/rules/strict)
   </p></details>
 
 <details><summary>Dependencies</summary><p>
 
-* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-* [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
-* [eslint](https://github.com/eslint/eslint)
-* [husky](https://github.com/typicode/husky)
-* [lint-staged](https://github.com/okonet/lint-staged)
-* [prettier](https://github.com/prettier/prettier)
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+- [eslint](https://github.com/eslint/eslint)
+- [husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [prettier](https://github.com/prettier/prettier)
   </p></details>

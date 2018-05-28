@@ -10,8 +10,14 @@
     "prettier": "1.13.0"
   },
   "lint-staged": {
-    "*.{js,jsx}": ["eslint --fix", "git add"],
-    "*.{json,md,scss}": ["prettier --write", "git add"]
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md,scss}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "scripts": {
     "fix:other": "yarn prettier --write",
