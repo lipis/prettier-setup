@@ -2,12 +2,12 @@
   "name": "prettier-setup",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "4.19.1",
+    "eslint": "5.0.1",
     "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-prettier": "2.6.1",
     "husky": "0.14.3",
-    "lint-staged": "7.1.2",
-    "prettier": "1.13.0"
+    "lint-staged": "7.2.0",
+    "prettier": "1.13.7"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -26,7 +26,7 @@
     "precommit": "lint-staged",
     "prettier": "prettier \"**/*.{json,md,scss}\"",
     "test:other": "yarn prettier --list-different",
-    "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
+    "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
     "test": "yarn test:other && yarn test:js"
   },
   "repository": {
