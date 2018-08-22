@@ -6,7 +6,7 @@ This project sets up formatting and linting tools to keep your code clean and co
 - [ESLint](https://eslint.org) checks JavaScript code for stylistic or programming errors.
 - [Husky](https://github.com/typicode/husky) uses Git hooks to ensure that **Prettier** and **ESLint** run on all staged changes to fix files before committing.
 
-The setup described here will format JavaScript, JSON, Sass, and Markdown files, but you can adjust the settings to your own needs.
+The setup described here will format JavaScript, JSON, Sass, Markdown, and YAML files, but you can adjust the settings to your own needs.
 
 ## Installing ESLint and Prettier
 
