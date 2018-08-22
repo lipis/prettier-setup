@@ -14,7 +14,7 @@
       "eslint --fix",
       "git add"
     ],
-    "*.{json,md,scss}": [
+    "*.{json,md,scss,yaml,yml}": [
       "prettier --write",
       "git add"
     ]
@@ -24,7 +24,7 @@
     "fix:js": "yarn test:js --fix",
     "fix": "yarn fix:js && yarn fix:other",
     "precommit": "lint-staged",
-    "prettier": "prettier \"**/*.{json,md,scss}\"",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
     "test:other": "yarn prettier --list-different",
     "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
     "test": "yarn test:other && yarn test:js"
