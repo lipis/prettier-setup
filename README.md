@@ -35,7 +35,7 @@ Open the [`package.json`](/package.json) file in your project and add the follow
   "fix:other": "yarn prettier --write",
   "fix:js": "yarn test:js --fix",
   "fix": "yarn fix:js && yarn fix:other",
-  "prettier": "prettier \"**/*.{json,md,scss}\"",
+  "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
   "test:other": "yarn prettier --list-different",
   "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
   "test": "yarn test:other && yarn test:js"
@@ -69,7 +69,7 @@ Add the `lint-staged` rules to the [`package.json`](/package.json) file in your 
 ```json
 "lint-staged": {
   "*.{js,jsx}": ["eslint --fix", "git add"],
-  "*.{json,md,scss}": ["prettier --write", "git add"]
+  "*.{json,md,scss,yaml,yml}": ["prettier --write", "git add"]
 },
 ```
 
