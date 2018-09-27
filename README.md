@@ -64,21 +64,18 @@ npm install husky lint-staged --save-dev --save-exact
 
 ### Set up the rules
 
-Add the `lint-staged` rules to the [`package.json`](/package.json) file in your project:
+Add the `lint-staged` and `husky` rules to the [`package.json`](/package.json) file in your project:
 
 ```json
 "lint-staged": {
   "*.{js,jsx}": ["eslint --fix", "git add"],
   "*.{json,md,scss,yaml,yml}": ["prettier --write", "git add"]
 },
-```
-
-Add the `precommit` hook to the `scripts`:
-
-```json
-"scripts": {
-  "precommit": "lint-staged"
-}
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+},
 ```
 
 ---

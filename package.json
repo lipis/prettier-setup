@@ -4,8 +4,8 @@
   "devDependencies": {
     "eslint": "5.6.0",
     "eslint-config-prettier": "3.1.0",
-    "eslint-plugin-prettier": "2.6.2",
-    "husky": "1.0.0",
+    "eslint-plugin-prettier": "2.7.0",
+    "husky": "1.0.1",
     "lint-staged": "7.3.0",
     "prettier": "1.14.3"
   },
@@ -19,11 +19,15 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "scripts": {
     "fix:other": "yarn prettier --write",
     "fix:js": "yarn test:js --fix",
     "fix": "yarn fix:js && yarn fix:other",
-    "precommit": "lint-staged",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
     "test:other": "yarn prettier --list-different",
     "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
