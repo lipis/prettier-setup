@@ -1,4 +1,4 @@
-# prettier-setup [![Twitter Follow](https://img.shields.io/twitter/follow/prettiercode.svg?style=social&label=Follow+Prettier)](https://twitter.com/PrettierCode)
+# prettier-setup
 
 This project sets up formatting and linting tools to keep your code clean and consistent, so you never have to argue about style again:
 
