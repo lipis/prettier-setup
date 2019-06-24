@@ -106,7 +106,7 @@ This project defines the following settings in the [`.prettierrc.json`](/.pretti
 
 <details><summary>ESLint rules</summary><p>
 
-Adjust your own rules by updating the [`.eslintrc.yaml`](/.eslintrc.yaml).
+Adjust your own rules by updating the [`.eslintrc.json`](/.eslintrc.json).
 
 - [`curly`](https://eslint.org/docs/rules/curly)
 - [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
