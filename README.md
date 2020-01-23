@@ -68,8 +68,8 @@ Add the `lint-staged` and `husky` rules to the [`package.json`](/package.json) f
 
 ```json
 "lint-staged": {
-  "*.{js,jsx}": ["eslint --fix", "git add"],
-  "*.{json,md,scss,yaml,yml}": ["prettier --write", "git add"]
+  "*.{js,jsx}": ["eslint --fix"],
+  "*.{json,md,scss,yaml,yml}": ["prettier --write"]
 },
 "husky": {
   "hooks": {
